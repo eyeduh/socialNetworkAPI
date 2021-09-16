@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework_nested',
-    'apps.users',
+    'users',
 
     'phonenumber_field',
 ]
@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 LOCALE_PATHS = [
-    BASE_DIR/'locals'
+    BASE_DIR , 'locals'
 ]
 
 LANGUAGE_CODE = 'en-us'
