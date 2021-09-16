@@ -49,11 +49,9 @@ class User(AbstractBaseUser):
         return self.email
 
     def has_perm(self, perm, obj=None):
-        "Does the user have a specific permission?"
         return True
 
     def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
         return True
 
 
@@ -72,7 +70,7 @@ class UserProfile(models.Model):
     location = models.CharField(max_length=100)
     job = models.CharField(max_length=100)
     phone = PhoneNumberField(unique=True, blank=True)
-
+    
     GENDERS = (
         (1, 'Female'),
         (2, 'Male'),
